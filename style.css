@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
 margin:0;
 font-family:Arial, sans-serif;
@@ -188,4 +189,196 @@ width:100%;
 font-size:38px;
 }
 
+=======
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:linear-gradient(180deg,#1e2c42,#0f172a);
+color:white;
+text-align:center;
+overflow-x:hidden;
+}
+
+/* Container */
+
+.container{
+margin-top:80px;
+padding:20px;
+}
+
+/* Avatar */
+
+.avatar{
+width:150px;
+height:150px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid #4da3ff;
+box-shadow:0 0 30px #4da3ff;
+display:block;
+margin:auto;
+}
+
+/* Text */
+
+.hi{
+color:#ccc;
+margin-top:15px;
+font-size:18px;
+}
+
+.name{
+font-size:50px;
+margin:10px 0;
+font-weight:700;
+}
+
+.role{
+font-size:20px;
+color:#9fb3ff;
+}
+
+.dev{
+color:#4da3ff;
+font-weight:bold;
+}
+
+/* Social */
+.social{
+
+display:flex;
+justify-content:center;
+gap:40px;
+margin:40px 0;
+
+}
+
+.social a{
+
+display:flex;
+flex-direction:column;
+align-items:center;
+text-decoration:none;
+color:white;
+font-size:14px;
+
+}
+
+.icon{
+
+width:70px;
+height:70px;
+background:#2b3c5a;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:28px;
+transition:0.3s;
+
+}
+
+.icon img{
+
+width:32px;
+
+}
+
+.social a:hover .icon{
+
+background:#4da3ff;
+transform:scale(1.15);
+box-shadow:0 0 20px #4da3ff;
+
+}
+
+.social span{
+
+margin-top:8px;
+
+}
+
+/* Cards */
+
+.cards{
+display:grid;
+grid-template-columns:repeat(2, 340px);
+gap:30px;
+justify-content:center;
+margin-top:50px;
+}
+
+.card{
+background:#2f415f;
+height:110px;
+padding:20px 25px;
+border-radius:15px;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+transition:0.3s;
+text-decoration:none;
+color:white;
+
+font-size:18px;
+font-weight:600;
+text-align:left;
+}
+
+.card:hover{
+transform:translateY(-8px);
+background:#3a537a;
+box-shadow:0 10px 25px rgba(0,0,0,0.6);
+}
+
+.btn{
+background:#4da3ff;
+width:45px;
+height:45px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:18px;
+flex-shrink:0;
+}
+
+/* Snow */
+
+.snow{
+position:fixed;
+top:-10px;
+color:white;
+font-size:10px;
+pointer-events:none;
+animation:fall linear infinite;
+}
+
+@keyframes fall{
+to{
+transform:translateY(100vh);
+}
+}
+
+/* Mobile */
+
+@media (max-width:700px){
+
+.cards{
+grid-template-columns:1fr;
+max-width:400px;
+margin:auto;
+}
+
+.card{
+width:100%;
+}
+
+.name{
+font-size:38px;
+}
+
+>>>>>>> 006279d7a66642c668d3f93414be5d1641f7f2ee
 }
