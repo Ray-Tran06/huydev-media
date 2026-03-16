@@ -1,55 +1,45 @@
-// Snow effect
-function createSnow(){
+const words = ["Developer", "Web Builder", "MMO Service"];
 
-const snow = document.createElement("div");
+let i = 0;
+let j = 0;
+let currentWord = "";
+let isDeleting = false;
 
-snow.className = "snow";
+function typeEffect() {
 
-snow.innerHTML = "❄";
+    currentWord = words[i];
 
-snow.style.left = Math.random() * window.innerWidth + "px";
+    if (!isDeleting) {
+        j++;
+    } else {
+        j--;
+    }
 
-snow.style.fontSize = (10 + Math.random() * 20) + "px";
+    document.getElementById("typing").textContent = currentWord.substring(0, j);
 
-snow.style.opacity = Math.random();
+    let speed = 100;
 
-snow.style.animationDuration = (4 + Math.random() * 6) + "s";
+    if (isDeleting) {
+        speed = 50;
+    }
 
-document.body.appendChild(snow);
+    if (!isDeleting && j === currentWord.length) {
+        speed = 1500;
+        isDeleting = true;
+    }
+    else if (isDeleting && j === 0) {
+        isDeleting = false;
+        i++;
 
-setTimeout(()=>{
-snow.remove();
-},10000);
+        if (i === words.length) {
+            i = 0;
+        }
+
+        speed = 300;
+    }
+
+    setTimeout(typeEffect, speed);
 
 }
 
-setInterval(createSnow,150);
-
-
-// Typing effect
-const text = ["Developer","Web Builder","MMO Service"];
-let count = 0;
-let index = 0;
-let current = "";
-let letter = "";
-
-(function type(){
-
-if(count === text.length){
-count = 0;
-}
-
-current = text[count];
-letter = current.slice(0, ++index);
-
-document.getElementById("typing").textContent = letter;
-
-if(letter.length === current.length){
-count++;
-index = 0;
-setTimeout(type,1500);
-}else{
-setTimeout(type,100);
-}
-
-})();
+typeEffect();
