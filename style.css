@@ -175,9 +175,13 @@ body {
     flex-shrink: 0;
 }
 
-/* Mobile */
+/* MOBILE */
 
 @media (max-width:700px) {
+
+    body{
+        padding: 0 10px;
+    }
 
     .avatar {
         width: 110px;
@@ -186,14 +190,18 @@ body {
 
     .name {
         font-size: 28px;
+        text-align: center;
     }
 
     .role {
         font-size: 16px;
+        text-align: center;
     }
 
     .social {
-        gap: 18px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
     }
 
     .icon {
@@ -204,23 +212,28 @@ body {
 
     .cards {
         grid-template-columns: 1fr;
-        width: 92%;
-        margin: auto;
+        width: 100%;
+        max-width: 350px;
+        margin: 25px auto;
         gap: 18px;
     }
 
-    /* chỉnh card cho icon nằm giữa */
-
     .card {
         width: 100%;
-        font-size: 15px;
-        padding: 20px 15px;
+        padding: 22px 15px;
+        text-align: center;
+        font-size: 16px;
+
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        text-align: center;
-        gap: 12px;
+
+        border-radius: 18px;
+    }
+
+    .card a {
+        margin-top: 12px;
     }
 
 }
