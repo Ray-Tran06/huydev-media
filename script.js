@@ -1,52 +1,55 @@
-<<<<<<< HEAD
+// Snow effect
 function createSnow(){
 
-const snow = document.createElement("div")
+const snow = document.createElement("div");
 
-snow.className = "snow"
+snow.className = "snow";
 
-snow.innerHTML = "❄"
+snow.innerHTML = "❄";
 
-snow.style.left = Math.random() * window.innerWidth + "px"
+snow.style.left = Math.random() * window.innerWidth + "px";
 
-snow.style.fontSize = (10 + Math.random() * 20) + "px"
+snow.style.fontSize = (10 + Math.random() * 20) + "px";
 
-snow.style.opacity = Math.random()
+snow.style.opacity = Math.random();
 
-snow.style.animationDuration = (4 + Math.random() * 6) + "s"
+snow.style.animationDuration = (4 + Math.random() * 6) + "s";
 
-document.body.appendChild(snow)
+document.body.appendChild(snow);
 
 setTimeout(()=>{
-snow.remove()
-},10000)
+snow.remove();
+},10000);
 
 }
 
-=======
-function createSnow(){
+setInterval(createSnow,150);
 
-const snow = document.createElement("div")
 
-snow.className = "snow"
+// Typing effect
+const text = ["Developer","Web Builder","MMO Service"];
+let count = 0;
+let index = 0;
+let current = "";
+let letter = "";
 
-snow.innerHTML = "❄"
+(function type(){
 
-snow.style.left = Math.random() * window.innerWidth + "px"
-
-snow.style.fontSize = (10 + Math.random() * 20) + "px"
-
-snow.style.opacity = Math.random()
-
-snow.style.animationDuration = (4 + Math.random() * 6) + "s"
-
-document.body.appendChild(snow)
-
-setTimeout(()=>{
-snow.remove()
-},10000)
-
+if(count === text.length){
+count = 0;
 }
 
->>>>>>> 006279d7a66642c668d3f93414be5d1641f7f2ee
-setInterval(createSnow,150)
+current = text[count];
+letter = current.slice(0, ++index);
+
+document.getElementById("typing").textContent = letter;
+
+if(letter.length === current.length){
+count++;
+index = 0;
+setTimeout(type,1500);
+}else{
+setTimeout(type,100);
+}
+
+})();
