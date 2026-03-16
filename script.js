@@ -1,4 +1,4 @@
-const words = ["Developer", "Web Builder", "MMO Service"];
+const words = ["Developer.", "Web Builder.", "MMO Service.", "Gamer."];
 
 let i = 0;
 let j = 0;

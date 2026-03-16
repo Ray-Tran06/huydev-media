@@ -54,10 +54,10 @@ body {
 
 /* dev */
 .dev {
-    color: #4da3ff;
-    font-weight: 800;
-    letter-spacing: 2px;
-    text-shadow: 0 0 10px #4da3ff, 0 0 25px #4da3ff, 0 0 40px #4da3ff;
+color: #4da3ff;
+font-weight: 700;
+letter-spacing: 1px;
+text-shadow: none;
 }
 
 /* Verify icon */
