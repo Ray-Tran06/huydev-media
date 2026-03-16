@@ -179,65 +179,77 @@ body {
 
 @media (max-width:700px){
 
-    body{
-        padding:0;
-        margin:0;
-    }
+*{
+box-sizing:border-box;
+}
 
-    .avatar{
-        width:110px;
-        height:110px;
-    }
+body{
+margin:0;
+padding:0;
+display:flex;
+justify-content:center;
+}
 
-    .name{
-        font-size:28px;
-        text-align:center;
-    }
+.container{
+width:100%;
+max-width:380px;
+margin:auto;
+}
 
-    .role{
-        font-size:16px;
-        text-align:center;
-    }
+.avatar{
+width:100px;
+height:100px;
+}
 
-    .social{
-        display:flex;
-        justify-content:center;
-        gap:20px;
-    }
+.name{
+font-size:26px;
+text-align:center;
+}
 
-    .icon{
-        width:50px;
-        height:50px;
-        font-size:20px;
-    }
+.role{
+font-size:15px;
+text-align:center;
+}
 
-    .cards{
-        display:grid;
-        grid-template-columns:1fr;
-        width:90%;
-        max-width:350px;
-        margin:25px auto;
-        gap:18px;
-    }
+.social{
+display:flex;
+justify-content:center;
+gap:18px;
+}
 
-    .card{
-        width:100%;
-        padding:22px 15px;
-        text-align:center;
-        font-size:16px;
+.icon{
+width:48px;
+height:48px;
+font-size:18px;
+}
 
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        justify-content:center;
+/* cards */
 
-        border-radius:18px;
-        margin:0 auto;
-    }
+.cards{
+display:grid;
+grid-template-columns:1fr;
+width:92%;
+margin:20px auto;
+gap:15px;
+}
 
-    .card a{
-        margin-top:12px;
-    }
+.card{
+width:100%;
+padding:18px 12px;
+font-size:15px;
+text-align:center;
+
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+
+border-radius:16px;
+}
+
+.card a{
+margin-top:10px;
+}
 
 }
 
