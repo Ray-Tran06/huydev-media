@@ -137,7 +137,8 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
-    margin-top: 50px;
+    max-width: 900px;
+    margin: 50px auto;
 }
 
 .card {
@@ -203,7 +204,7 @@ body {
 
     .cards {
         grid-template-columns: 1fr;
-        width: 100%;
+        width: 90%;
     }
 
     .card {
