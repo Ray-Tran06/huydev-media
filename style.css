@@ -180,7 +180,7 @@ body {
 @media (max-width:700px) {
 
     body{
-        padding: 0 10px;
+        padding: 0;
     }
 
     .avatar {
@@ -212,10 +212,11 @@ body {
 
     .cards {
         grid-template-columns: 1fr;
-        width: 100%;
+        width: 90%;
         max-width: 350px;
         margin: 25px auto;
         gap: 18px;
+        justify-content: center;
     }
 
     .card {
