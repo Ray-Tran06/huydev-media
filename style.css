@@ -154,7 +154,7 @@ body {
     font-size: 18px;
     font-weight: 600;
     transition: 0.3s;
-    
+
 }
 
 .card:hover {
@@ -177,79 +177,95 @@ body {
 
 /* MOBILE */
 
-@media (max-width:700px){
+@media (max-width:700px) {
 
-*{
-box-sizing:border-box;
-}
+    * {
+        box-sizing: border-box;
+    }
 
-body{
-margin:0;
-padding:0;
-display:flex;
-justify-content:center;
-}
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
 
-.container{
-width:100%;
-max-width:380px;
-margin:auto;
-}
+    /* container */
 
-.avatar{
-width:100px;
-height:100px;
-}
+    .container {
+        width: 100%;
+        max-width: 380px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
 
-.name{
-font-size:26px;
-text-align:center;
-}
+    /* avatar */
 
-.role{
-font-size:15px;
-text-align:center;
-}
+    .avatar {
+        width: 100px;
+        height: 100px;
+    }
 
-.social{
-display:flex;
-justify-content:center;
-gap:18px;
-}
+    /* text */
 
-.icon{
-width:48px;
-height:48px;
-font-size:18px;
-}
+    .name {
+        font-size: 26px;
+        text-align: center;
+    }
 
-/* cards */
+    .role {
+        font-size: 15px;
+        text-align: center;
+    }
 
-.cards{
-display:grid;
-grid-template-columns:1fr;
-width:92%;
-margin:20px auto;
-gap:15px;
-}
+    /* social icon */
 
-.card{
-width:100%;
-padding:18px 12px;
-font-size:15px;
-text-align:center;
+    .social {
+        display: flex;
+        justify-content: center;
+        gap: 18px;
+    }
 
-display:flex;
-flex-direction:column;
-align-items:center;
-justify-content:center;
+    .icon {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
 
-border-radius:16px;
-}
+    /* cards */
 
-.card a{
-margin-top:10px;
-}
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin: 20px auto;
+        gap: 14px;
+    }
+
+    /* card */
+
+    .card {
+        width: 100%;
+        padding: 16px 12px;
+        font-size: 15px;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 16px;
+    }
+
+    /* icon button trong card */
+
+    .card a {
+        margin-top: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
 }
 
